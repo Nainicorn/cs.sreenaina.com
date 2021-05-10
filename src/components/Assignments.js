@@ -2,7 +2,7 @@ import React from 'react'
 
 const Assignments = () => {
     return (
-        <div>
+        <div className='content'>
             Assignments
         </div>
     )
