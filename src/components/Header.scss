@@ -1,0 +1,104 @@
+header {
+    position: sticky;
+    // background-color: #3f5c93;
+    color: white;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+
+    .title {
+        padding: 10px;
+        text-transform: capitalize;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        transition: all 0.2s ease-in-out;
+        .linka {
+            text-decoration: none;
+        }
+        &.show {
+            display: flex;
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        .link {
+            box-shadow: inset 0px 0px 15px 3px #23395e;
+            background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+            background-color: #2e466e;
+            border-radius: 17px;
+            border: 1px solid #1f2f47;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 0.8em;
+            padding: 5px 10px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #263666;
+            margin-left: 10px;
+            &:hover {
+                background: linear-gradient(
+                    to bottom,
+                    #415989 5%,
+                    #2e466e 100%
+                );
+                background-color: #415989;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+
+        .hamburger-line {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        &.toggle {
+            .hamburger-line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .hamburger-line2 {
+                opacity: 0;
+            }
+
+            .hamburger-line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        .links {
+            position: absolute;
+            top: 54px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            opacity: 0;
+            transform: translateX(100%);
+
+            .link {
+                box-shadow: none;
+                background: none;
+                background-color: #2e466e;
+                border-radius: 0;
+                margin-right: 0;
+                padding: 10px;
+                margin-left: 0;
+            }
+        }
+        .hamburger {
+            display: block;
+        }
+    }
+}
