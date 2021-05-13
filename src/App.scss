@@ -1,12 +1,51 @@
-
 section {
+    font-size: 90%;
     padding: 20px;
-    // background-color: rgb(150, 185, 230);
+    overflow: auto;
 
     .content {
+        font-size: 80%;
         padding: 10px;
         border-radius: 10px;
-        background-color: #eee;
+        background-color: #ddd;
+
+        .content-section {
+            padding-bottom: 20px;
+            .content-title {
+                font-weight: bolder;
+                padding-bottom: 10px;
+            }
+
+            .content-info {
+                // background-color: #555;
+                // color: #fff;
+                // padding: 5px;
+                // border-radius: 5px;
+                margin-left: 25px;
+                padding-bottom: 10px;
+                margin-bottom: 5px;
+
+                &::first-line {
+                    font-size: 100%;
+                    font-weight: bold;
+                    color: maroon;
+                }
+            }
+        }
+
+        &.coding {
+            .content-section {
+                .content-info {
+                    margin-left: 0;
+                    .image {
+                        margin: auto;
+                        max-width: 500px;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
-    
 }

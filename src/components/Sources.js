@@ -1,6 +1,6 @@
 import React from "react";
 
-const Takeaways = () => {
+const Sources = () => {
     return (
         <div className="content">
             <div className="content-section">
@@ -11,4 +11,4 @@ const Takeaways = () => {
     );
 };
 
-export default Takeaways;
+export default Sources;

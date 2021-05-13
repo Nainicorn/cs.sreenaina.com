@@ -5,10 +5,25 @@
     font-family: "Source Serif Pro", serif;
 }
 
+:root {
+	--color1: #257799;
+	--color2: #2b6178;
+	--color3: #2c505f;
+	--color4: #273d47;
+  }
+
 body {
-	background: linear-gradient(-45deg, #110b5f, #166775, #4ac2ee, #98e4f1);
+	background: linear-gradient(-45deg, var(--color1), var(--color2), var(--color3), var(--color4));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+    height: 100vh;
+	overflow: hidden;
+	font-size: 1.4em;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
     height: 100vh;
 }
 

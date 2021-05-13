@@ -18,17 +18,23 @@ const Header = () => {
         <header>
             <div className="title">writing in discipline</div>
             <div className={burgerActive ? 'links show' : 'links'}>
-                <Link to='/home' className='linka' onClick={onLinkClick}>
-                    <div className="link">Home</div>
+                <Link to='/' className='linka' onClick={onLinkClick}>
+                    <div className="link">WID</div>
                 </Link>
-                <Link to='/coding' className='linka' onClick={onLinkClick}>
-                    <div className="link">Coding</div>
+                <Link to='/guidelines' className='linka' onClick={onLinkClick}>
+                    <div className="link">Guidelines</div>
                 </Link>
                 <Link to='/assignments' className='linka' onClick={onLinkClick}>
                     <div className="link">Assignments</div>
                 </Link>
                 <Link to='/takeaways' className='linka' onClick={onLinkClick}>
                     <div className="link">Takeaways</div>
+                </Link>
+                <Link to='/coding' className='linka' onClick={onLinkClick}>
+                    <div className="link">Coding</div>
+                </Link>
+                <Link to='/sources' className='linka' onClick={onLinkClick}>
+                    <div className="link">Sources</div>
                 </Link>
             </div>
             <div className={burgerActive ? 'hamburger toggle' : 'hamburger'} onClick={onBurgerClick}>

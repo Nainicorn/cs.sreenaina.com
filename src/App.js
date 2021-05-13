@@ -4,21 +4,25 @@ import Header from './components/Header';
 import Guidelines from './components/Guidelines';
 import Assignments from './components/Assignments';
 import Takeaways from './components/Takeaways';
-import Home from './components/Home';
+import Wid from './components/Wid';
+import Coding from "./components/Coding";
+import Sources from "./components/Sources";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <section>
         <Switch>
           <Route path="/guidelines" component={Guidelines} />
           <Route path="/assignments" component={Assignments} />
           <Route path="/takeaways" component={Takeaways} />
-          <Route path="/" component={Home} />
+          <Route path="/coding" component={Coding} />
+          <Route path="/sources" component={Sources} />
+          <Route path="/" component={Wid} />
         </Switch>
       </section>
-    </div>
+    </>
   );
 }
 
