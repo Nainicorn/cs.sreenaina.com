@@ -27,11 +27,11 @@ const Header = () => {
                 <Link to='/assignments' className='linka' onClick={onLinkClick}>
                     <div className="link">Assignments</div>
                 </Link>
-                <Link to='/takeaways' className='linka' onClick={onLinkClick}>
-                    <div className="link">Takeaways</div>
-                </Link>
                 <Link to='/coding' className='linka' onClick={onLinkClick}>
                     <div className="link">Coding</div>
+                </Link>
+                <Link to='/takeaways' className='linka' onClick={onLinkClick}>
+                    <div className="link">Takeaways</div>
                 </Link>
                 <Link to='/sources' className='linka' onClick={onLinkClick}>
                     <div className="link">Sources</div>

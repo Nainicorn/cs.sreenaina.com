@@ -1,0 +1,15 @@
+&.coding {
+    .content-section {
+        .content-info {
+            margin-left: 0;
+            .image {
+                margin: auto;
+                max-width: 500px;
+                img {
+                    padding-top: 30px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

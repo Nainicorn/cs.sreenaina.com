@@ -14,7 +14,7 @@ const Wid = () => {
                     assignments that are tailored to the genres of a specific
                     field. For example, a science course might require students
                     to write a lab report, while a psychology course might
-                    assign a case study.
+                    assign a case study (Purdue Writing Lab, 0:00 - 2:45). 
                 </div>
                 <div className="content-info">
                     WID overlaps with types of writing that are used in the

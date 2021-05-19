@@ -29,7 +29,7 @@ const Guidelines = () => {
                     This format allows people to draw the most important
                     conclusions from the paper without having to read the entire
                     thing. It also separates the paper in sections for people
-                    with different reasons for reading it.
+                    with different reasons for reading it (GMU Writing Center, 1:00 - 2:00).
                 </div>
                 <div className="content-info">
                     DIFF: There’s no need for a fleshed out conclusion in a CS
@@ -44,7 +44,7 @@ const Guidelines = () => {
                     papers. Within authorship, STEM fields tend to prefer
                     co-authorship while other fields prefer single authorship.
                     There are different perspectives and values taken into
-                    consideration with college writing.
+                    consideration with college writing (CS Research and Writing Guide, 1). 
                 </div>
             </div>
             <div className="content-section">
